@@ -9,6 +9,7 @@
   "author": "yan",
   "license": "ISC",
   "dependencies": {
+    "nodemon": "^2.0.4",
     "qs": "^6.9.4"
   }
 }
