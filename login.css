@@ -1,0 +1,18 @@
+@charset 'utf-8';
+.title{
+    font-size: 32px;
+}
+.logo{
+    display: block;
+}
+.btn{
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #56a5f1;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    
+}
