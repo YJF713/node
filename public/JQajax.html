@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./jq.js"></script>
+    <script>
+        $.ajax({
+            url:'...',
+            method:'POST',
+            data:{
+                name:this.name,
+                age:18
+            },
+            success:function(res){
+                console.log(res.data);
+            }   
+        })
+    </script>
+</body>
+</html>

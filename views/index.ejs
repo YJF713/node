@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJS模板引擎</title>
+</head>
+<body>
+    <h1>EJS模板引擎</h1>
+    <% let name = 'jack'  %>  <!-- 可以写name={name1：'a',name2:'b'}  -->
+    <% let data =['yesterday','today','tomorrow'] %> 
+    <%= name %> 
+    <% if(!name) { %>
+     <p>我只有name存在时才会显示，你看到我了吗</p>
+    <% }else{ %>
+        <p>我只有name不存在时才会显示</p>
+    <% } %> 
+
+    <ul>
+        <% for( let index = 0; index < time.length; index++ ) { %>
+          <li><%= time[index] %> </li>
+        <% } %>
+    </ul>
+    <P><%= person.age %> </P>
+    <%- include ('footer',{msg:'hello EJS模板引擎'}) %> 
+
+</body>
+</html>
